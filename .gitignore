@@ -1,0 +1,13 @@
+# Environment variables
+env.sh
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+.terraform/
+
+.idea/
+test_workspace/
+
+*.iml
