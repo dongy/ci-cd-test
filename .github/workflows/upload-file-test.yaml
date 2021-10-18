@@ -11,12 +11,12 @@ jobs:
 
       - name: mkdir dir
         run:
-          mkdir -p ./path
+          mkdir -p ./path/files/
 
       - name: input to file
         run:
-          echo "hello" > ./path/hello.txt;
-          echo "world" > ./path/world.txt;
+          echo "hello" > ./path/files/hello.txt;
+          echo "world" > ./path/files/world.txt;
 
       - name: upload files
         uses: actions/upload-artifact@v2
