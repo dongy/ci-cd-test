@@ -27,7 +27,7 @@ jobs:
       - name: download dir
         uses: actions/download-artifact@v2
         with:
-          name: "upload files directory"
+          name: "files"
 
       - name: output
         run:
