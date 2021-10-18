@@ -15,8 +15,8 @@ jobs:
 
       - name: input to file
         run:
-          echo "hello" > ./path/files/hello.txt;
-          echo "world" > ./path/files/world.txt;
+          echo "hello1" > ./path/files/hello1.txt;
+          echo "world1" > ./path/files/world1.txt;
 
       - name: upload files
         uses: actions/upload-artifact@v2
