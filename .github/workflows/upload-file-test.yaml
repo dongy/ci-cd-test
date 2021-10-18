@@ -15,10 +15,10 @@ jobs:
 
       - name: input to file
         run:
-          echo "hello1" > ./path/files/hello1.txt;
-          echo "world1" > ./path/files/world1.txt;
+          echo "hello" > ./path/files/hello.txt;
+          echo "world" > ./path/files/world.txt;
 
-      - name: upload files
+      - name: upload files directory
         uses: actions/upload-artifact@v2
         with:
           name: "files"
