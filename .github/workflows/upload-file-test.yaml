@@ -16,9 +16,10 @@ jobs:
       - name: echo hello
         run:
           echo hello > ./path/hello.txt
+          echo world > ./path/world.txt
 
       - name: upload
         uses: actions/upload-artifact@v2
         with:
-          name: "hello.txt"
-          path: "./path/hello.txt"
+          name: "upload dir"
+          path: "./path"
