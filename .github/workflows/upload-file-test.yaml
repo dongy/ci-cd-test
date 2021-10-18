@@ -13,13 +13,13 @@ jobs:
         run:
           mkdir -p ./path
 
-      - name: echo hello
+      - name: input to file
         run:
-          echo hello > ./path/hello.txt
-          echo world > ./path/world.txt
+          echo "hello" > ./path/hello.txt;
+          echo "world" > ./path/world.txt;
 
-      - name: upload
+      - name: upload files
         uses: actions/upload-artifact@v2
         with:
-          name: "upload dir"
+          name: "files"
           path: "./path"
