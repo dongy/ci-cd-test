@@ -23,7 +23,7 @@ jobs:
         if: failure()
         with:
           name: "files"
-          path: "./path1"
+          path: "./path"
 
       - name: download dir
         uses: actions/download-artifact@v2
