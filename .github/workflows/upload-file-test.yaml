@@ -20,9 +20,10 @@ jobs:
 
       - name: upload files directory
         uses: actions/upload-artifact@v2
+        if: failure()
         with:
           name: "files"
-          path: "./path"
+          path: "./path1"
 
       - name: download dir
         uses: actions/download-artifact@v2
