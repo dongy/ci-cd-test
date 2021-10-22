@@ -20,7 +20,6 @@ jobs:
 
       - name: upload files directory
         uses: actions/upload-artifact@v2
-        if: !failure()
         with:
           name: "files"
           path: "./path"
